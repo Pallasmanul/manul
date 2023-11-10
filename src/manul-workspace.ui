@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <template class="ManulWorkspace" parent="GtkApplicationWindow">
+        <child>
+            <object class="GtkBox" id="vbox">
+                <property name="orientation">vertical</property>
+                <property name="visible">true</property>
+                <child>
+                    <object class="GtkEventBox" id="event_box">
+                        <property name="vexpand">true</property>
+                        <property name="visible">true</property>
+                        <child>
+                            <object class="GtkOverlay" id="overlay">
+                                <property name="visible">true</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>
+

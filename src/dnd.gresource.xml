@@ -1,0 +1,7 @@
+<?xml version="1.0 encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/org/gtk/manul/app">
+        <file preprocess="xml-stripblanks">dnd.ui</file>
+        <file preprocess="xml-stripblanks">menu.ui</file>
+    </gresource>
+</gresources>

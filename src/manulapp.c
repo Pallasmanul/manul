@@ -10,6 +10,7 @@
 
 #include "manulapp.h"
 #include <gtk/gtk.h>
+#include <gtksourceview/gtksource.h>
 #include <libpeas/peas-autocleanups.h>
 
 /*
@@ -135,8 +136,8 @@ static void manul_app_open(GApplication *app, GFile **files, gint n_files,
 
 static void manul_app_startup(GApplication *app) {
 
-  g_action_map_add_action_entries(G_ACTION_MAP(app), _manul_app_entries, G_N_ELEMENTS(_manul_app_entries), app);
-
+  g_action_map_add_action_entries(G_ACTION_MAP(app), _manul_app_entries,
+                                  G_N_ELEMENTS(_manul_app_entries), app);
 }
 
 static void manul_app_shutdown(GApplication *app) {}

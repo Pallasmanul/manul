@@ -7,6 +7,12 @@
                 <property name="visible">true</property>
             </object>
         </child>
+        <child>
+            <object clas="GtkSourceView" id="source_view">
+                <property name="tab_width">4</property>
+                <property name="auto_indent">True</property>
+            </object>
+        </child>
     </template>
 </interface>
 

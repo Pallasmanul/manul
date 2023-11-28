@@ -6,6 +6,7 @@ manul_builder_pkg_requires = [
   'gio-unix-2.0',
   'gtk4',
   'gtksourceview-5',
+  'libgtksource_dep',
 ]
 
 manul_builder_gir_includes = [
@@ -20,7 +21,8 @@ manul_builder_deps = [
   libgiounix_dep,
   libgtk_dep,
   libpeas_dep,
-  libadwaita_dep
+  libadwaita_dep,
+  libgtksource_dep,
 ]
 
 manul_builder_static = [

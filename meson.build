@@ -19,7 +19,7 @@ pkggirdir = join_paths(get_option('datadir'),'gnome-builder', 'gir-1.0')
 pkgtypelibdir = join_paths(get_option('libdir'), 'gnome-builder', 'girepository-1.0')
 
 glib_req_version = '2.72'
-gtk_req_version = '4.6'
+gtk_req_version = '4.10'
 gtksourceview_req_version = '5.4'
 libadwaita_req_version = '1.1'
 gobject_introspection_req_version = '1.72'
@@ -120,6 +120,7 @@ global_c_args = [
   '-DGTK_SOURCE_VERSION_MIN_REQUIRED=GTK_SOURCE_VERSION_@0@_@1@'.format(gtksourceview_major, gtksourceview_minor),
   '-DGTK_SOURCE_VERSION_MAX_ALLOWED=GTK_SOURCE_VERSION_@0@_@1@'.format(gtksourceview_major, gtksourceview_minor),
 ]
+
 test_c_args = [
   '-Wcast-align',
   '-Wdeclaration-after-statement',

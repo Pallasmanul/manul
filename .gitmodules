@@ -1,0 +1,9 @@
+[submodule "lib/libsigrok"]
+	path = lib/libsigrok
+	url = https://github.com/sigrokproject/libsigrok.git
+[submodule "lib/libserialport"]
+	path = lib/libserialport
+	url = https://github.com/sigrokproject/libserialport.git
+[submodule "lib/libsigrokdecode"]
+	path = lib/libsigrokdecode
+	url = https://github.com/sigrokproject/libsigrokdecode.git

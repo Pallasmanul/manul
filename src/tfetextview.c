@@ -53,6 +53,18 @@ static gboolean save_file(GFile *file, GtkTextBuffer *tb, GtkWindow *win) {
   char *contents;
 
   gboolean stat;
+  GError *err = NULL;
+
+  gtk_text_buffer_get_bounds(tb, &start_iter, &end_iter);
+  contents = gtk_text_buffer_get_text(tb, &start_iter, &end_iter, FALSE);
+  stat = g_file_replace_contents(file, contents, strlen(contents), NULL, TRUE, G_FILE_CREATE_NONE, NULL, NULL, &err);
+
+  if (stat)
+    gtk_text_buffer_set_modified(tb, FALSE);
+  else {
+    g_print("%s",err->message);
+  }
+  g_free(contents);
 
   return stat;
 }

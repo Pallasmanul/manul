@@ -36,9 +36,6 @@ gboolean _manul_drag_drop (_ManulDrag *dest, gint x, gint y, GObject *data)
   _ManulDragInterface *iface;
 
   g_return_val_if_fail (MANUL_IS_DRAG(dest),FALSE);
-
-
   return true;
-
 }
 

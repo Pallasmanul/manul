@@ -31,7 +31,7 @@ manul_builder_static = [
 resources = gnome.compile_resources('resources','dnd.gresource.xml',
 )
 
-gnome_builder = executable('Manul', 'main.c', 'manulapp.c', resources,
+gnome_builder = executable('Manul', 'main.c', 'manulapp.c', 'tfetextview.c', resources,
            install: true,
             c_args: exe_c_args + release_args,
          link_args: exe_link_args,

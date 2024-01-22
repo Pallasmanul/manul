@@ -3,7 +3,8 @@
 
 #include "manul-workbench.h"
 #include <gtk/gtk.h>
-#include <libpeas/peas.h>
+#include <libpeas-2/libpeas.h>
+#include <libadwaita-1/adwaita.h>
 
 G_BEGIN_DECLS
 

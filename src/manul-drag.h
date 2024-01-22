@@ -24,8 +24,6 @@ gboolean _manul_drag_drop     (_ManulDrag *dest, gint x, gint y, GObject *data);
 void _manul_drag_highlight    (_ManulDrag *dest, gint x, gint y);
 
 
-
-
 G_END_DECLS
 
 #endif /* _MANUL_DRAG_H_ */
